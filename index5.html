@@ -7,11 +7,11 @@
 </head>
 <body>
     <script>
-    var totalNumberofRows = 4;
+    var totalNumberofRows = prompt("Enter A Number");
     var output = '';
     for (var i = 1; i <= totalNumberofRows; i++) {
         for (var j = 1; j <= i; j++) {
-            output += j + '  ';
+            output = output+j + '  ';
         }
         document.write(output);
         output = '';
