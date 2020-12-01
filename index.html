@@ -13,7 +13,7 @@
     let userInput = 0;
 
     for(let i = 0; i < 10; i++) {
-        userInput = +prompt('Enter A Number')
+        userInput = +prompt('Enter Number ' + (i +  1))
         sum = sum + userInput
         numbers.push(userInput);
 }
@@ -22,10 +22,6 @@
     document.write("You Entered: " + numbers + "<br>")
     document.write("Total Sum: " + sum + "<br>")
     document.write("Total Average: " + avrg)
-
-        // alert(numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9]);
-
-        // alert((numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9])/100);
 </script>
 </body>
 </html>
