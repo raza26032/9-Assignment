@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+<body>
+    <form action="#">
+        <input type="number"  id="user" placeholder="Enter A Number">
+        <button onclick="tableGenerator()">Generate Table</button>
+    </form>
+
+    <h2>Your Table Is Here</h2>
+    <p id="result"></p>
+
+<script>
+        let result = []
+
+        function tableGenerator(){
+        let Userinput=document.getElementById("user").value;
+
+        for (let i = 1; i <= 10 ; i= i +1) {
+
+        let result = ( Userinput + "  X  " + i + "  =  " + (i * Userinput) );
+
+        document.getElementById("result").innerHTML = result;        
+}
+}
+</script>
+</body>
+</html>
